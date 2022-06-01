@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,200;0,300;1,300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* height: 100%; */
+
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    width: 100%;
+    background: gray;
+    height: 6rem;
+    position: relative;
+}
+
+nav .burger{
+    width: 5rem;
+    height: 4rem;
+    margin: 1rem 0;
+    /* background: #000; */
+    position: absolute;
+    top: 0;
+    right: 5%;
+    display: none;
+}
+
+nav .burger div{
+    width: 100%;
+    height: 0.5rem;
+    background: #fff;
+    margin-top: 0.7rem;
+}
+
+nav .burger:hover{
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 6rem;
+    text-transform: uppercase;
+}
+
+nav ul li{
+    font-size: 1.5rem;
+    padding: 0 3rem;
+}
+
+nav ul li a{
+    color: red;
+    text-decoration: none;
+}
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    background:url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner h1{
+    font-size: 9rem;
+}
+
+.banner p{
+    font-size: 1.5rem;
+}
+
+.anchor{
+    padding: 1rem 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    transition: 0.5s;
+    letter-spacing: 0.2rem;
+}
+
+.anchor:hover{
+    color: red;
+    background: #fff;
+}
+
+section{
+    padding: 7rem 5rem;
+}
+
+.recipe{
+    width: 100%;
+}
+
+.recipe .box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recipe .box .card{
+    width: 35rem;
+    height:50rem;
+    margin-top: 3rem;
+}
+
+.recipe .box .card .recipe_img{
+    /* padding: 0 2rem; */
+    width: 35rem;
+    height:50rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.recipe .box .card .recipe_img img{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.7s;
+}
+
+.recipe .box .card .recipe_img img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.recipe .box .card .recipe_img .recipe_desc{
+    position: absolute;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    bottom: 0;
+    width: 100%;
+    padding:2rem 0;
+}
+
+.recipe .box .card .recipe_img .recipe_desc h3{
+    font-size: 2rem;
+    text-align: center;
+    color: orangered;
+}
+
+.recipe .box .card .recipe_img .recipe_desc p{
+    font-size: 1.3rem;
+    padding: 0 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.about{
+    width: 100%;
+    height: 25%;
+    background: orangered;
+    display: flex;
+}
+
+.about .about_img{
+    width: 35rem;
+    height: 40rem;
+    position: relative;
+    box-shadow: -10px -10px 10px #000;
+}
+
+.about .about_img img{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.about .about_para{
+    /* width: 80%; */
+    background: #fff;
+    float: right;
+    padding: 10rem 2rem;
+    margin-left: 5rem;
+    /* font-size: 1.5rem; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu{
+    width: 100%;
+}
+
+.menu .box{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu .box .card{
+    width: 55rem;
+    height: 18rem;
+    margin-top: 3rem;
+    
+    margin-left: 2rem;
+    display: flex;
+}
+
+.menu .box .card .menu_img{
+    width: 35%;
+    height: 100%;
+    position: relative;
+}
+
+.menu .box .card .menu_img img{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+.menu .box .card .menu_desc{
+    width: 65%;
+    height: 100%;
+    color: #fff;
+    background: #000;
+    opacity: 0.8;
+    padding: 3.5rem 2rem;
+}
+
+.menu .box .card .menu_desc h3{
+    text-transform: capitalize;
+    font-size: 2.2rem
+}
+
+.menu .box .card .menu_desc p{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding:2rem 0
+}
+
+.menu .box .card .menu_desc .menu_link{
+    padding: 1rem 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    background: orangered;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    transition: 0.5s;
+    letter-spacing: 0.2rem;
+    /* margin-top: 6rem; */
+}
+
+.menu .box .card .menu_desc .menu_link:hover{
+    color:orangered ;
+    background: #fff;
+}
+
+.news_letter{
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 3rem 0;
+}
+
+.news_letter p{
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.news_letter .text_field{
+    display: flex;
+}
+
+ .news_letter input{
+    padding: 0.5rem 2rem;
+    margin-right: -4px;
+ }
+
+.news_letter button{ 
+    padding: 0.5rem 2rem;
+    background: orangered;
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}  
+
+.items{
+    width: 100%;
+}
+
+.items .box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.items .box .card{
+    width: 25rem;
+    height: 45rem;
+    margin: 1rem 3rem;
+}
+
+.items .box .card .item_img{
+    position: relative;
+    width: 25rem;
+    height: 40rem;
+}
+
+.items .box .card .item_img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.items .box .card .item_desc{
+    width: 25rem;
+    height: 5rem;
+    background: orangered;
+    padding: 1rem;
+}
+
+.items .box .card .item_desc h3{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+footer{
+    margin-top: auto;
+    background: orangered;
+    color: #fff;
+    width: 100%;
+}
+
+footer h2{
+    padding: 1.2rem 0;
+    text-align: center;  
+}
+
+@media (min-width:800px) and (max-width:991px) {
+  
+    html{
+        font-size: 55%;
+    }
+    
+    section{
+        padding:3rem;
+    }
+    
+    .recipe .box .card{
+        width: 30rem;
+        height: 48rem;
+    }
+    
+    .recipe .box .card .recipe_img {
+        width: 30rem;
+        height: 48rem;
+    }
+    
+    .menu .box .card {
+        width: 48rem;
+        height: 20rem;
+    }
+    
+    .items .box .card{
+        width: 23rem;
+        margin: 1rem;
+    }
+    
+    .items .box .card .item_img{
+        width: 23rem;
+    }
+    
+    .items .box .card .item_desc {
+        width: 23rem;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:799px) {
+    html{
+        font-size: 45%;
+    }
+
+    section{
+        padding:3rem;
+    }
+
+    .recipe .box .card{
+        width: 25rem;
+        height: 45rem;
+    }
+
+    .recipe .box .card .recipe_img {
+        width: 25rem;
+        height: 45rem;
+    }
+
+    .recipe .box .card .recipe_img .recipe_desc {
+        padding: 1rem 0;
+    }
+
+    .menu .box .card {
+        width: 38rem;
+        height: 22rem;
+        margin-top: 3rem;
+
+    }
+
+    .menu .box .card .menu_img{
+        width: 40%;
+        height: 100%;
+        position: relative;
+    }
+
+    .menu .box .card .menu_desc {
+        width: 62%;
+        padding: 2.5rem 1rem;
+    }
+  }
+
+  @media (min-width:480px) and (max-width:576px) {
+    html{
+        font-size: 35%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .banner p {
+        font-size: 2rem;
+    }
+
+    .anchor {
+        font-size: 2.5rem;
+    }
+
+    .recipe .box .card {
+        width: 55rem;
+        height: 60rem;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recipe .box .card .recipe_img {
+        width: 55rem;
+        height: 60rem;
+    }
+
+    .recipe .box .card .recipe_img .recipe_desc {
+        padding: 4rem 0;
+    }
+
+    .recipe .box .card .recipe_img .recipe_desc h3 {
+        font-size: 3.5rem;
+    }
+
+    .recipe .box .card .recipe_img .recipe_desc p{
+        font-size: 2.5rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .menu .box .card {
+        width: 65rem;
+        height: 22rem;
+        margin: 2rem auto;
+    }
+
+    .menu .box .card .menu_img {
+        width: 40%;
+    }
+
+    .menu .box .card .menu_desc {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .menu .box .card .menu_desc h3 {
+        font-size: 3.2rem;
+    }
+
+    .menu .box .card .menu_desc p {
+        font-size: 1.9rem;
+        padding: 1rem 0;
+    }
+
+
+    .menu .box .card .menu_desc .menu_link {
+        margin-top: 0;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+    
+    .menu .box .card .menu_desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news_letter {
+        flex-direction: column;
+    }
+
+    .news_letter p {
+        font-size: 2.5rem;
+    }
+
+
+    .news_letter .text_field {
+        margin-top: 2rem;
+    }
+
+    .news_letter input {
+        padding: 1rem 2rem;
+ 
+    }
+
+    .news_letter button {
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+    }
+
+    .items .box .card {
+        width: 50rem;
+        height: 60rem;
+        /* margin: 1rem 3rem; */
+    }
+
+    .items .box .card .item_img {
+        position: relative;
+        width: 50rem;
+        height: 53rem;
+    }
+
+    .items .box .card .item_desc {
+        width: 50rem;
+        height: 7rem;
+    }
+
+    .items .box .card .item_desc h3 {
+        font-size: 2.2rem;
+        line-height: 7rem;
+    }
+
+    footer h2 {
+        padding: 2rem 0;
+        font-size: 3rem;
+    }
+
+    nav{
+        height: 8rem;
+    }
+
+    nav ul {
+        line-height: 8rem;
+        display: none;
+    }
+
+    nav ul li{
+        font-size: 2.5rem;
+    }
+
+    nav .burger{
+        display: block;
+    }
+}

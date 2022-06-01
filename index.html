@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#">home</a></li>
+            <li><a href="#">recipe</a></li>
+            <li><a href="#">stroy</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="burger" id="burger" onclick="toggle()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <h1>food blog</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur</p>
+        <a href="#" class="anchor">read recipe</a>
+    </section>
+
+    <section class="recipe">
+        <div class="box">
+            <div class="card">
+                <div class="recipe_img">
+                    <img src="images/first.jpg" alt="" srcset="">
+                    <div class="recipe_desc">
+                        <h3>Lunch</h3>
+                        <p>7 Quick & Healthy Lunch Box Ideas for week(Vegetarian)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="recipe_img">
+                    <img src="images/second.jpg" alt="" srcset="">
+                    <div class="recipe_desc">
+                        <h3>Breakfast</h3>
+                        <p>7 Quick & Healthy Lunch Box Ideas for week(Vegetarian)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="recipe_img">
+                    <img src="images/third.jpg" alt="" srcset="">
+                    <div class="recipe_desc">
+                        <h3>Dinner</h3>
+                        <p>7 Quick & Healthy Lunch Box Ideas for week(Vegetarian)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about_img">
+            <img src="images/user.jpg" alt="" srcset="">
+        </div>
+        <div class="about_para">
+            <h2>Shaikh Alam</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptas totam odio quam! Commodi repellendus eius sequi voluptatum quisquam tenetur eligendi voluptatem. Voluptas unde eius, eaque eum itaque harum rem?</p>
+            <a href="" class="anchor">read more</a>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="box">
+            <div class="card">
+                <div class="menu_img">
+                    <img src="images/food.jpg" alt="" srcset="">
+                </div>
+                <div class="menu_desc">
+                    <h3>the veg chicken tikka</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptas totam odio quam!</p>
+                    <a href="#" class="menu_link">read more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="menu_img">
+                    <img src="images/food.jpg" alt="" srcset="">
+                </div>
+                <div class="menu_desc">
+                    <h3>the veg chicken tikka</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptas totam odio quam!</p>
+                    <a href="#" class="menu_link">read more</a>
+                
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="menu_img">
+                    <img src="images/food.jpg" alt="" srcset="">
+                </div>
+                <div class="menu_desc">
+                    <h3>the veg chicken tikka</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptas totam odio quam!</p>
+                    <a href="#" class="menu_link">read more</a>
+                
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="menu_img">
+                    <img src="images/food.jpg" alt="" srcset="">
+                </div>
+                <div class="menu_desc">
+                    <h3>the veg chicken tikka</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptas totam odio quam!</p>
+                    <a href="#" class="menu_link">read more</a>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news_letter">
+        <p>sign up for email updates a get a free ecook book with our 25 recipe</p>
+        <div class="text_field">
+            <input type="text" name="" id="">
+            <button>subscribe</button>
+        </div>
+    </section>
+
+    <section class="items">
+        <div class="box">
+            <div class="card">
+                <div class="item_img">
+                    <img src="images/cat1.jpg" alt="" srcset="">
+                </div>
+                <div class="item_desc">
+                    <h3>spicy sesame noodles with crispy tofu in bowl</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="item_img">
+                    <img src="images/cat2.jpg" alt="" srcset="">
+                </div>
+                <div class="item_desc">
+                    <h3>spicy sesame noodles with crispy tofu in bowl</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="item_img">
+                    <img src="images/cat3.jpg" alt="" srcset="">
+                </div>
+                <div class="item_desc">
+                    <h3>spicy sesame noodles with crispy tofu in bowl</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="item_img">
+                    <img src="images/cat4.jpg" alt="" srcset="">
+                </div>
+                <div class="item_desc">
+                    <h3>spicy sesame noodles with crispy tofu in bowl</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Copy Right @ Food Blog</h2>
+    </footer>
+    
+    <script>
+        const toggle =()=>{
+            let navigation = document.querySelector('#navigation')
+    
+            if(navigation.style.display == 'none'){
+                navigation.style.display = 'block'
+            }else{
+                navigation.style.display = 'none'
+            }
+
+        }
+    </script>
+</body>
+</html>
